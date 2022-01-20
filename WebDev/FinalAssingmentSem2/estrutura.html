@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho Final - Samuel Iatarola</title>
+
+    <script src="https://kit.fontawesome.com/565c28a20e.js" crossorigin="anonymous"></script>
+
+    <link rel="reset" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+    <div class="divHeader">
+        <h1 class = "h1Header">Desenvolvimento Web 2021-2</h1>
+        <img class="imgHeader" src="page-bg.png" alt="">
+    </div>
+
+    <div class="divMain">
+        <div class="icone">
+            <i class="fas fa-pause-circle"></i>
+        </div>
+        <div class="cronometroMenu">
+            <h1 class="cronometro" id="cronometroMain"> 00 : 00 : 00 : 000</h1>
+            <button id="iniciar" class="buttonCronometro" type="button">Iniciar</button>
+            <button id="pausar" class="buttonCronometro" type="button">Pausar</button>
+            <button id="parar" class="buttonCronometro" type="button">Parar</button>
+            <button id="zerar" class="buttonCronometro" type="button">Zerar</button>
+        </div>
+        <aside class="asideDiv">
+            <nav>
+                <ul>
+                    <li>
+                        <button class="menuLateral" type="button" id="home">Home</button>
+                    </li>
+                    <li>
+                        <button class="menuLateral" type="button" id="cadastro">Cadastrar</button>
+                    </li>
+                    <li>
+                        <button class="menuLateral" type="button" id="aprovados">Aprovados</button>
+                    </li>
+                    <li>
+                        <button class="menuLateralReprovados" type="button" id="reprovados">Reprovados</button>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <div class="painelAtualizado">
+            <h1>Painel</h1>
+        </div>
+            <div class="cadastroAluno">
+                <h1>Cadastro</h1>
+                <p>informe o nome e a nota</p>
+                    <div class="inputs">
+                        <input placeholder="Nome" id="nomeCadastro">
+                        <p class="nomeInput">Nome</p> 
+                        <input placeholder="Nota" id="notaCadastro">
+                        <p class="notaInput">Nota</p> 
+                    </div>
+                <button id="salvarCadastro">Salvar</button>
+                <i class="fas fa-cogs"></i>
+            </div>
+            <div class="aprovadoAluno">
+                <h1>Alunos Aprovados</h1>
+                <p>Confira a lista dos Aprovados.</p>
+                <table class="tabelaAprovados" rules = none>
+                    <thead>
+                        <tr class="statusAprovados">
+                            <td>
+                                NOME
+                            </td>
+                            <td>
+                                NOTA
+                            </td>
+                            <td>
+                                STATUS
+                            </td>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+            <div class="reprovadoAluno">
+                <h1>Alunos Reprovados</h1>
+                <p>Confira a lista dos Reprovados.</p>
+                <table class="tabelaReprovados" rules = none>
+                    <tr class="statusReprovados">
+                        <td>
+                            NOME
+                        </td>
+                        <td>
+                            NOTA
+                        </td>
+                        <td>
+                            STATUS
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        <div class="menuInferior">
+            <nav>
+                <ul>
+                    <li>
+                        <button class="buttonInferior" type="button" id="home2">Home</button>
+                    </li>
+                    <li>
+                        <button class="buttonInferior" type="button" id="cadastro2">Cadastrar</button>
+                    </li>
+                    <li>
+                        <button class="buttonInferior" type="button" id="aprovados2">Aprovados</button>
+                    </li>
+                    <li>
+                        <button class="reprovadosInferior" type="button" id="reprovados2">Reprovados</button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="creditos">
+            <h1>Aluno: Samuel Iatarola</h1>
+        </div>
+    </div>
+</body>
+    <script src="cronometro.js"></script>
+    <script src="esconderdiv.js"></script>
+    <script src="cadastro.js"></script>
+</html>

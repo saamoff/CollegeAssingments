@@ -1,0 +1,362 @@
+body{
+    overflow-x: hidden;
+    background-color: rgba(212,230,113,255);
+}
+
+.divHeader{
+    width: 800px;
+    margin: 0 auto;
+    position: relative; 
+}
+
+.h1Header{
+    position: absolute;
+    text-shadow: 2px 2px gray;
+    font-size: 40px;
+    padding-top: 35px;
+    padding-left: 260px;
+}
+
+.imgHeader{
+    margin: 0 auto;
+    box-shadow: 0 0 9px #000000;
+}
+
+.divMain{
+    position: relative;
+    top: -40px;
+    margin: 0 auto;
+    border-radius: 5px;
+    width: 800px;
+    height: 600px;
+    background-color: black;
+    box-shadow: 0 0 9px #000000;
+}
+
+.icone{
+    position: absolute;
+    font-size: 45px;
+    color: white;
+    left: 240px;
+}
+
+.cronometro{
+    font-size: 45px;
+    position: relative;
+    color: white;
+    left: 300px;
+}
+
+.buttonCronometro{
+    font-size: 16px;
+    position: relative;
+    left: 210px;
+    top: -30px;
+    background-color: green;
+    color: white;
+    position: relative;
+    width: 100px;
+    height: 40px;
+    margin: 5px;
+    border: 0px;
+    border-radius: 6px;
+    box-shadow: white 2px 2px 0px 0px;    
+}
+
+.buttonCronometro:hover{
+    background-color: rgba(0, 128, 0, 0.493);
+}
+
+.asideDiv{
+    position: relative;
+    top: -160px;
+    width: 200px;
+}
+
+.asideDiv nav{
+    max-width: 200px;
+}
+
+.asideDiv nav ul a{
+    color: rgba(212,230,113,255);
+}
+
+.asideDiv nav ul button:hover{
+    color: rgba(212, 230, 113, 0.466);
+}
+
+.menuLateral{
+    font-size: 16px;
+    background-color: transparent;
+    color: rgba(212,230,113,255);
+    border: 0;
+    text-align: left;
+    width: 100px;
+    border-top: rgba(255, 255, 255, 0.322) solid 1px;
+}
+
+.menuLateralReprovados{
+    font-size: 16px;
+    background-color: transparent;
+    color: rgba(212,230,113,255);
+    border: 0;
+    text-align: left;
+    width: 100px;
+    border-top: rgba(255, 255, 255, 0.322) solid 1px;
+    border-bottom: rgba(255, 255, 255, 0.322) solid 1px;
+}
+
+.painelAtualizado h1{
+    left: 160px;
+    top: 120px;
+    position: absolute;
+    color: rgba(212,230,113,255);
+}
+.cadastroAluno{
+    border-left: lime solid 5px;
+    border-radius: 5px;
+    display: none;
+    position: absolute;
+    background-color: white;
+    color: black;
+    width: 550px;
+    height: 330px;
+    left: 160px;
+    bottom: 70px;
+}
+
+.cadastroAluno i{
+    position: absolute;
+    font-size: 35px;
+    bottom: 10px;
+    right: 10px;
+    color: rgb(0, 110, 255);
+}
+
+.cadastroAluno i:hover{
+    color: rgba(0, 110, 255, 0.603);
+}
+
+.cadastroAluno h1{
+    position: relative;
+    left: 30px;
+}
+
+.cadastroAluno p{
+    color: rgba(0, 0, 0, 0.616);
+    font-size: 20px;
+    position: relative;
+    left: 30px;
+    bottom: 30px;
+}
+
+.inputs p{
+    position: absolute;
+    font-size: 14px;
+}
+
+.nomeInput{
+    top: 100px;
+    display: none;
+}
+
+.notaInput{
+    top: 145px;
+    display: none;
+}
+
+#nomeCadastro{
+    outline: none;
+    border: transparent;
+    border-bottom: gray solid 1px;
+    position: relative;
+    width: 300px;
+    height: 30px;
+    left: 29px;
+    bottom: 25px;
+}
+
+#nomeCadastro:focus::placeholder{
+    color: transparent;
+}
+
+#nomeCadastro:focus+p{
+    display: block;
+}
+
+#notaCadastro{
+    outline: none;
+    border: transparent;
+    border-bottom: gray solid 1px;
+    position: relative;
+    width: 300px;
+    left: 29px;
+    height: 30px;
+    bottom: 10px;
+}
+
+#notaCadastro:focus::placeholder{
+    color: transparent;
+}
+
+#notaCadastro:focus+p{
+    display: block;
+}
+
+.cadastroAluno button{
+    font-size: 16px;
+    position: relative;
+    left: 25px;
+    bottom: -30px;
+    background-color: green;
+    color: white;
+    position: relative;
+    width: 200px;
+    height: 50px;
+    border-radius: 6px;    
+}
+
+.cadastroAluno button:hover{
+    background-color: rgba(0, 128, 0, 0.493);
+}
+
+.aprovadoAluno{
+    border-left: rgb(0, 191, 255) solid 5px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border-radius: 5px;
+    display: none;
+    margin: 0px;
+    position: absolute;
+    background-color: white;
+    color: black;
+    width: 550px;
+    height: 330px;
+    left: 160px;
+    top: 200px;
+}
+
+.aprovadoAluno h1{
+    position: relative;
+    left: 30px;
+}
+
+.aprovadoAluno p{
+    color: rgba(0, 0, 0, 0.616);
+    font-size: 20px;
+    position: relative;
+    left: 30px;
+    bottom: 30px;
+}
+
+.tabelaAprovados{
+    position: relative;
+    border: black solid 1px;
+    text-align: center;
+    width: 500px;
+    left: 20px;
+    bottom: 40px;
+}
+
+.tabelaAprovados tr:nth-child(even){
+    background-color: grey;
+}
+
+.statusAprovados{
+    background-color: black;
+    color: rgba(212,230,113,255);
+}
+
+.reprovadoAluno{
+    border-left: maroon solid 5px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border-radius: 5px;
+    display: none;
+    position: absolute;
+    background-color: white;
+    color: black;
+    width: 550px;
+    height: 330px;
+    left: 160px;
+    top: 200px;
+}
+
+.reprovadoAluno h1{
+    position: relative;
+    left: 30px;
+}
+
+.reprovadoAluno p{
+    color: rgba(0, 0, 0, 0.616);
+    font-size: 20px;
+    position: relative;
+    left: 30px;
+    bottom: 30px;
+}
+
+.tabelaReprovados{
+    position: relative;
+    border: black solid 1px;
+    text-align: center;
+    width: 500px;
+    left: 20px;
+    bottom: 40px;
+}
+
+.tabelaReprovados tr:nth-child(even){
+    background-color: grey;
+}
+
+.statusReprovados{
+    background-color: black;
+    color: rgba(212,230,113,255);
+}
+
+.tituloPainel{
+    color: rgba(212,230,113,255);
+    font-size: 26px;
+}
+.menuInferior{
+    position: relative;
+    left: 190px;
+    bottom: -240px;
+}
+
+.menuInferior ul li{
+    display: inline;
+}
+
+.buttonInferior{
+    font-size: 16px;
+    background-color: transparent;
+    color: rgba(212,230,113,255);
+    border: 0;
+    text-align: center;
+    border-right: rgba(255, 255, 255, 0.322) solid 1px;    
+}
+
+.buttonInferior:hover{
+    color: rgba(212, 230, 113, 0.466);
+}
+
+.reprovadosInferior{
+    font-size: 16px;
+    background-color: transparent;
+    color: rgba(212,230,113,255);
+    border: 0;
+    text-align: center;
+    border-right: 0;
+}
+
+.reprovadosInferior:hover{
+    color: rgba(212, 230, 113, 0.466);
+}
+
+.creditos h1{
+    font-size: 22px;
+    position: relative;
+    left: 280px;
+    bottom: -220px;
+    color: rgba(255, 255, 255, 0.63);
+}
